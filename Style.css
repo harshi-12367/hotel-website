@@ -1,54 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+#home {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  height: 600%;
+  width: 100%;
+  text-align: center;
 }
 
+#home h2 {
+  padding-top: 2%;
+  margin-bottom: 1%; /* Adjusted to reduce space */
+  color: white;
+  font-size: 70px;
+  display: inline-block;
+}
+
+#home h4 {
+  margin-top: 0.5%; /* Adjusted to reduce space */
+  margin-bottom: 1%; /* Adjusted to reduce space */
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+}
+
+#home p {
+  margin-top: 1%; /* Adjusted to reduce space */
+  color: white;
+  display: inline-block;
+}
+
+#ban {
+  text-align: center;
+  position: relative;
+  padding-bottom: 3%; /* Adjusted to reduce space  */
+}
+
+.Ban a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: aqua;
+  display: inline-block;
+  padding: 1%;
+  text-decoration: none;
+}
 .services {
-    background-color: #d3d3d3;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #d3d3d3;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .services h2 {
-    font-family: 'Georgia', serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .service-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .service-item {
-    background-color: white;
-    border: 1px solid #000;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensures the links are not underlined */
-    color: inherit; /* Ensures the text color is inherited */
-    transition: transform 0.2s; /* Adds a hover effect */
+  background-color: white;
+  border: 1px solid #000;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Ensures the links are not underlined */
+  color: inherit; /* Ensures the text color is inherited */
+  transition: transform 0.2s; /* Adds a hover effect */
 }
 
 .service-item:hover {
-    transform: scale(1.05); /* Scales the item on hover */
+  transform: scale(1.05); /* Scales the item on hover */
 }
 
 .service-item i {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .service-item p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .service-item:nth-child(1) p { color: #28a745; }
