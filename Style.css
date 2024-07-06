@@ -1,6 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .2s linear;
+  color: black;
+}
+.section{
+  padding: 2rem 9%;
+}
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255,51,153,.05);
+  
+}
+.heading span{
+  color: rgba(255, 3, 162, 0.927);;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: .9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:rgba(255, 3, 162, 0.927);
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  padding: 1.5rem 9%;
+  position:sticky;
+  z-index:5;
+}
+
+header .logo{
+  font-size:3rem ;
+  color: #333;
+  font-weight: bolder;
+}
+
+header .logo span{
+  color:rgba(183, 91, 150, 0.927);
+}
+
+header .navbar a{
+  font-size:1.8rem ;
+  padding: 0 1.5rem;
+  color: #666;
+}
+
+header .navbar a:hover{
+  color:rgba(207, 105, 169, 0.927);
+}
+
+header .icon a{
+  color: #333;
+  margin-left: 1.7rem;
+  font-size: 1.4rem;
+}
+
+header .icon a:hover{
+  color:rgba(255, 3, 162, 0.927);
+}
+
+header #menu{
+  display: none;
+}
+
+header .fa-bars{
+  font-size: 1.8rem;
+  color: #333;
+  border-radius: .5rem;
+  padding: .3rem .8rem;
+  cursor: pointer;
+  border: .1rem solid rgba(0,0,0,.3);
+  display: none;
+}
+
 #home {
-  background-image: url("Untitled design (2).png");
-  background-position: center;
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background: cover;
   height: 600%;
   width: 100%;
   text-align: center;
@@ -44,8 +143,9 @@
   text-decoration: none;
 }
 .services {
-  background-color: #d3d3d3;
-  padding: 20px 0;
+  background-color: rgb(224, 193, 140);
+  padding-top:10px;
+  padding-bottom: 20px 0;
   text-align: center;
 }
 
@@ -60,6 +160,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 100px;
 }
 
 .service-item {
@@ -94,6 +195,8 @@
 .service-item:nth-child(3) p { color: #28a745; }
 .service-item:nth-child(4) p { color: #28a745; }
 .service-item:nth-child(5) p { color: #28a745; }
+
+
 .wrapper{
   display: grid;
   grid-template-columns: repeat(5,1fr);
